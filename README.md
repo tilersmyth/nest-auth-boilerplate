@@ -24,10 +24,12 @@ npm install or yarn install
 cp .env.example .env
 ```
 
-4. Start the application
+4. Create database and start Redis with `redis-server`
+
+5. Start the application
 
 ```sh
 yarn run start:dev
 ```
 
-5. Visit `http://localhost:4000/graphql` to use GraphQL playground
+6. Visit `http://localhost:4000/graphql` to use GraphQL playground
