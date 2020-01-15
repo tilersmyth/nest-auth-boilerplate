@@ -9,6 +9,7 @@
     "TypeORM",
     "Redis",
     "Express Session",
+    "docker",
     "Jest",
     "TypeScript"
   ],

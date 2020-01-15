@@ -1,4 +1,4 @@
-![nest-auth-banner](https://user-images.githubusercontent.com/8736328/72360082-70f45100-36bd-11ea-9665-1bf412f9730a.jpg)
+![nest-auth-banner](https://user-images.githubusercontent.com/8736328/72399106-269dbf00-3713-11ea-9edb-1030da18181b.jpg)
 
 # NestJS Authentication Boilerplate
 
@@ -6,30 +6,24 @@ Bare bones authentication boilerplate using NestJS, GraphQL, TypeORM (Postgres) 
 
 ## **Getting Started**
 
-1. Clone the repository
-
-```sh
-git clone https://github.com/tilersmyth/nest-auth-boilerplate.git
+```bash
+$ git clone https://github.com/tilersmyth/nest-auth-boilerplate.git
+$ cd nest-auth-boilerplate
 ```
 
-2. Install dependencies
+```bash
+# Spin up Docker with db and redis
+$ docker-compose up -d
 
-```sh
-npm install or yarn install
+# Install dependencies
+$ npm install or yarn install
+
+# Create .env file (set env variables)
+$ cp .env.example .env
+
+# Start application (dev mode)
+$ yarn run start:dev
+
 ```
 
-3. Create .env file and set environment variables
-
-```sh
-cp .env.example .env
-```
-
-4. Create database and start Redis with `redis-server`
-
-5. Start the application
-
-```sh
-yarn run start:dev
-```
-
-6. Visit `http://localhost:4000/graphql` to use GraphQL playground
+Try GraphQL playground at `http://localhost:4000/graphql`
